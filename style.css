@@ -4,30 +4,3 @@
     box-sizing: border-box;
 }
 
-.container {
-    border: 1px solid red;
-    height: 450px;
-    position: relative;
-}
-
-.container div {
-    width: 150px;
-    height: 150px;
-    border: 1px solid red;
-    position: absolute;
-}
-
-.container div:nth-child(1) {
-    background: blue;
-    z-index: 1;
-    right: 0;
-}
-
-.container div:nth-child(2) {
-    background: gray;
-}
-
-.container div:nth-child(3) {
-    background: green;
-}
-

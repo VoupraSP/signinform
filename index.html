@@ -5,31 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Pagina teste</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Sign In</title>
 </head>
 <body>
     
-    <div class="container">
-        <div>teste 1</div>
-        <div id="t2">teste 2</div>
-        <div>teste 3</div>
+    <div class="form-container">
+        <form>
+            <h3>Sign In</h3>
+
+            <div class="input-container">
+                <input type="email" name="email" placeholder="Username">
+                <i data-feather="user"></i>
+            </div>
+            <div class="input-container">
+                <input type="password" name="password" placeholder="Password">
+                <i data-feather="lock"></i>
+            </div>
+
+            <div class="options-container">
+                <div class="checkbox-container">
+                    <input type="checkbox" name="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <a href="#">Reset Password</a>
+            </div>
+
+            <input type="button" value="Sign In">
+            <p>or Sign In with</p>
+
+            <div class="media-container">
+                <div class="media">
+                    <i data-feather="facebook"></i>
+                </div>
+                <div class="media">
+                    <i data-feather="mail"></i>
+                </div>
+                <div class="media">
+                    <i data-feather="twitter"></i>
+                </div>
+            </div>
+            <hr>
+            <p class="footer">Do not have an account? <a href="Sign Up now"></a></p>
+        </form>
     </div>
 
-    
-    <label for="email">E-mail:</label><br>
-    <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
 
-    <label for="password">Senha:</label><br>
-    <input type="password" name="password" id="password" placeholder="password"><br><br>
-
-    <input type="radio" name="genero" value="female">
-    <label for="female"> Mulher</label>
-    <br><br>
-    <input type="radio" name="genero" value="male"> 
-    <label for="male"> Homem</label>
     
-    <br><br>
-    <input type="radio" name="genero" value="male">
-    <label for="male"> Não identificado</label>
+
+    <script>
+      feather.replace()
+    </script>
 </body>
 </html>
